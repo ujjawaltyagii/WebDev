@@ -1,0 +1,59 @@
+.container{
+    display: grid;
+    grid-template: repeat(3, [row] minmax(120px,1fr))/repeat(4, [col] 1fr);
+    grid-gap: 10px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+    align-items: center;
+    justify-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 4em;
+    line-height: 1;
+    color: grey;
+}
+
+#box1 {
+    grid-column: col 1 / span 4;
+    grid-row: row 1;
+    background: linear-gradient(to left, #6441a5, #2a0845);
+  }
+  
+  #box2 {
+    grid-column: col 4;
+    grid-row: row 1 / span 3;
+    background: linear-gradient(to right, #ffb347, #ffcc33);
+    opacity: 0.8;
+  }
+  
+  #box3 {
+    grid-column: col 1;
+    grid-row: row 2 / span 2;
+    background: linear-gradient(to top, #d38312, #a83279);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  #box4 {
+    grid-column: col 2 / span 2;
+    grid-row: row 2;
+    background: linear-gradient(to left, #b3ffab, #12fff7);
+  }
+  
+  #box5 {
+    grid-column: col 1;
+    grid-row: row 3;
+    background: linear-gradient(to top, #485563, #29323c);
+  }
+  
+  #box6 {
+    grid-column: col 2 / span 3;
+    grid-row: row 3;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+  }
+  
