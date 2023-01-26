@@ -1,0 +1,31 @@
+div{
+    border: 1px solid black;
+    background-color: aqua;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.box1{
+   position: absolute;
+   height: 150px;
+   width: 20%;
+   left: 15px;
+   top: 100px;
+   
+}
+/* .box{
+    position: fixed;
+} */
+
+.box2{
+    position: sticky;
+    top: 100px;
+}
+
+.fixed{
+    height: 1000px;
+    width: 500px;
+    background-color: green;
+}
