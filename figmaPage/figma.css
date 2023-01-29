@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container{
+    position: absolute;
+    width: 1440px;
+    height: 1461px;
+    left: 4px;
+    top: 5px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: baseline;
+    height: 261px;
+}
+
+.logo{
+    position: absolute;
+    width: 98px;
+    height: 82px;
+    left: 117px;
+    top: 53px;
+}
+
+.nav{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+/* identical to box height, or 111% */
+   color: #777C85;
+   position: absolute;
+
+}
+
+#team{
+    width: 51px;
+    height: 20px;
+    left: 485px;
+    top: 74px;
+    
+}
+
+#team:hover {
+    color: #4E5DC0;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#about{
+    width: 79px;
+    height: 20px;
+    left: 608px;
+    top: 74px;
+}
+
+#about:hover {
+    color: #4E5DC0;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#courses{
+width: 70px;
+height: 20px;
+left: 754px;
+top: 74px;
+}
+
+#courses:hover {
+    color: #4E5DC0;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#contact{
+width: 68px;
+height: 20px;
+left: 898px;
+top: 74px;
+}
+
+#contact:hover {
+    color: #4E5DC0;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.button{
+    position: absolute;
+width: 165px;
+height: 54px;
+left: 1205px;
+top: 54px;
+
+background: #4E5DC0;
+border-radius: 5px;
+}
+
+.button-text{
+    width: 109px;
+height: 24px;
+left: 1233px;
+top: 68px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 52px;
+margin-left: 30px;
+/* identical to box height, or 150% */
+color: #FFFFFF;
+}
+
+/* #intro{
+    position: absolute;
+} */
+
+#h111{
+    position: absolute;
+width: 312px;
+height: 45px;
+left: 117px;
+top: 266px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 45px;
+/* identical to box height */
+color: #16171C;
+font-stretch: 100;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #5e636c;
+/* width: fit-content; */
+padding-bottom: 70px;
+/* font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738; */
+}
+
+#into{
+    position: absolute;
+width: 573px;
+/* height: 272px; */
+height: 855px;
+left: 117px;
+top: 373px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+/* or 170% */
+
+
+color: #000000;
+
+opacity: 0.5;
+}
+
+#h11{
+    /* position: absolute; */
+/* width: 280px;
+height: 0px;
+left: 117px;
+top: 331px;
+
+border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+#image1{
+    position: absolute;
+width: 570px;
+height: 427px;
+left: 800px;
+top: 266px;
+border-radius: 30px;
+}
+
+#image2{
+    position: absolute;
+width: 500px;
+height: 480px;
+left: 117px;
+top: 860px;
+border-radius: 30px;
+}
+
+#h222{
+    position: absolute;
+    width: 260px;
+    height: 45px;
+    left: 791px;
+    top: 872px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #16171C;
+    font-stretch: 100;
+    border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #5e636c;
+/* width: fit-content; */
+padding-bottom: 70px;
+}
+
+#h22{
+
+}
+
+#introo{
+    position: absolute;
+width: 462px;
+height: 306px;
+left: 791px;
+top: 979px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+/* or 170% */
+
+
+color: #000000;
+
+opacity: 0.5;
+}
+
+
+.line{
+    position: absolute;
+    width: 1440px;
+height: 0px;
+left: 0px;
+top: 1461px;
+
+border: 1.5px solid #E1E2E4;
+}
+
+.boxfoot{
+    /* position: relative; */
+width: 1440px;
+height: 390px;
+/* left: 0px; */
+margin-top: 468px;
+
+background: #FFFFFF;
+}
+
+.lastlogo{
+    position: absolute;
+width: 1440px;
+height: 390px;
+left: 0px;
+top: 1468px;
+
+background: #FFFFFF;
+
+}
+
+#logowa{
+    position: absolute;
+width: 98px;
+height: 82px;
+left: 80px;
+top: 85px;
+}
+
+#pp{
+    position: absolute;
+width: 223px;
+height: 32px;
+left: 70px;
+top: 213px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+letter-spacing: 3px;
+text-decoration-line: underline;
+text-transform: uppercase;
+
+color: #4E5DC0;
+
+}
+
+.service{
+    position: absolute;
+width: 209px;
+height: 64px;
+left: 70px;
+top: 259px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+
+
+color: #999999;
+
+}
+
+#boxx{
+    position: absolute;
+    width: 92px;
+    height: 32px;
+    left: 435px;
+    top: 1521px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    color: #4E5DC0;
+    
+}
+
+#dummy{
+    position: absolute;
+width: 332px;
+height: 96px;
+left: 435px;
+top: 1567px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* or 200% */
+
+
+color: #999999;
+}
+
+#email{
+    position: absolute;
+    width: 61px;
+    height: 32px;
+    left: 435px;
+    top: 1703px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    color: #4E5DC0;
+    
+}
+
+#mail{
+    position: absolute;
+width: 185px;
+height: 32px;
+left: 435px;
+top: 1749px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+
+color: #999999;
+
+}
+
+#menuu{
+    position: absolute;
+    width: 57px;
+    height: 32px;
+    left: 925px;
+    top: 1521px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    color: #4E5DC0;
+    
+}
+
+#a{
+    position: absolute;
+    width: 69px;
+    height: 128px;
+    left: 925px;
+    top: 1567px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 200% */
+    
+    
+    color: #999999;
+}
+
+#b{
+    position: absolute;
+    width: 75px;
+    height: 128px;
+    left: 925px;
+    top: 1600px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 200% */
+    
+    
+    color: #4E5DC0;
+}
+
+#c{
+    position: absolute;
+    width: 75px;
+    height: 128px;
+    left: 925px;
+    top: 1633px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 200% */
+    
+    
+    color: #999999;
+}
+
+#d{
+    position: absolute;
+    width: 75px;
+    height: 128px;
+    left: 925px;
+    top: 1666px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 200% */
+        color: #999999;
+}
+
+#fb{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1210px;
+top: 1517px;
+}
+
+#fbb{
+    position: absolute;
+    width: 9.33px;
+    height: 16px;
+    left: 1229px;
+    top: 1533px;
+}
+
+#twi{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1266px;
+top: 1517px;
+}
+
+#twii{
+    position: absolute;
+    width: 16px;
+height: 13px;
+left: 1282px;
+top: 1535px;
+}
+
+#insta{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1322px;
+top: 1517px;
+}
+
+#instaa{
+    position: absolute;
+    width: 16px;
+height: 16px;
+left: 1338px;
+top: 1533px;
+
+}
+.blink {
+
+    animation: blinker 1.5s linear infinite;
+    color: #4E5DC0;
+margin-top: 700px;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
