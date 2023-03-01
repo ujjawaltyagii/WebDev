@@ -1,0 +1,41 @@
+git commands :
+
+git init            -> will convert normal file in git repo(adds a hidden .git file to watch over e.g:- dummy_repo git init)
+git clone (link of repo) name_of_folder(by which we want to save ended with '/')
+git status          -> will show the status(if we have modified anything or not and ALSO shows if a folder is a git repo or not)
+git diff            -> will show the actual change in repo(use in cloning)
+git log             -> show top/latest commits ever done in repo(press q to come out)
+git log -3          -> for latest 3 commits
+git log -p          ->   will show diff as well with prior info
+git log --oneline   -> will show names only in one line (useful for searching or reviewing)
+git log --stat      -> show the only names of the files in which changes have occured
+git show (comit id) -> kisi particular commit ke andar kya changes hue hai vo ajayenge
+git add             -> add file to track (tells git that conflict is resolved)
+(git add main.cpp)    for new file - add file to track
+                      for old file - staging index 
+git add .           -> jitni bhi files modified hai sbko add krdo NOT RECOMMENDED
+git add .gitignore  -> we can create a file named .gitignore which will contain paths and text files and wont show it on commit status
+git commit -m "name to commit" -> for final commit to repo
+git restore (main.cpp) -> restore head to the safepoint and undo modification
+git branch          -> will show n0. of branches in repo and current branch
+get branch (branch name) -> creating new branch (eg- git branch quicksort)
+git checkout quicksort -> will switch us to named branch quicksort
+git checkout master -> switch to master
+git checkout -b (name) -> new branch bnake usme direct move bhi karade gi (eg- git checkout bubblesort)
+git commit -am "(name to define commit)" -> it add and commit both (eg- git add main.cpp 
+                                                                        git commit -am "bubblesort added")
+git merge branchname -> but before that move to master by checkout - it will merge branch to master
+git branch -d branchname -> it will delete the branch as it was already merged so changes will remain but branch will vanish
+git tag -a betaV1.0 masterkiid/shaaa -m "name to define beta version" -> will tag current master as beta(on further modification beta idmaster will ramin tagged and changes will be added in master)
+git tag -d betav1.0 -> it will delete the tag of beta 
+
+
+-------------------------------------
+
+shell commands:
+
+cd     - to change repo or folder or directory(eg:- cd myBTP or cd D: or cd Desktop)
+cd..   - to come out of folder i.e go back to directory
+ls -al - list all file pointers i.e will show even hidden files and dot periods of current directory and even parent directory(. , .. , .git)
+pwd    - shows the current directory in which we are
+ls     - list folders and files in a folder

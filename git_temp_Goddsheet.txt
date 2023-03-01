@@ -1,0 +1,25 @@
+adding folder to "existing" github repo using git teminal :
+open folder in shell/teminal
+git init
+git add foldername/ or filename.cpp
+git status
+git commit -m "commit message"
+git branch -M main
+git remote add origin https://repolink.git
+git push -u origin main
+hogya....khatam....tata....ja github check krle abb!!
+
+
+-----------------------------
+
+once above repo is connected then for 2nd commit :-
+git add foldername/ or file.cpp
+git status
+git commit -m "commit message"
+git branch -M main
+git push -u origin main
+-----ja github check krle abb-------
+ 
+
+
+
