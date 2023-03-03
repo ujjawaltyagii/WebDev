@@ -1,0 +1,14 @@
+Tailwind CSS(nodejs should be already installed)
+1. npm install -D tailwindcss postcss autoprefixer vite
+2. npx tailwindcss init -p
+3. in tailwind.config.js -> content: ["*"]
+4. in package.json -> (add script)  "scripts":{
+                                                 "start": "vite"
+                                              },
+5. create sytle.css and add 
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+6. link css file with index.html(html file)
+7. check -> npm run start
+8. ctrl+c -> (^c)
