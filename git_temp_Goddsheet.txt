@@ -9,7 +9,6 @@ git remote add origin https://repolink.git
 git push -u origin main
 hogya....khatam....tata....ja github check krle abb!!
 
-
 -----------------------------
 
 once above repo is connected then for 2nd commit :-
@@ -19,7 +18,13 @@ git commit -m "commit message"
 git branch -M main
 git push -u origin main
 -----ja github check krle abb-------
- 
 
+///////////////////////
 
-
+updating a PR (adding a new updated file in PR):
+git status
+git pull (to confirm that our current/local branch is not behind main)
+git checkout branch_name
+git add .
+git commit -m "commit msg"
+git push origin branch_name
