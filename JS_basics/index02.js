@@ -114,6 +114,110 @@ console.log(test);
 //emptying an array
 let testt = [1,2,3,4,5];
 let testt2 = testt;
-testt = [];
+//testt = [];
+
+//testt.length=0;
+
+testt.splice(0,testt.length);
+
 console.log(testt);
-console.log(testt2)
+console.log(testt2);
+
+//Combining & slicing arrys
+let f = [1,2,3];
+let s = [4,5,6];
+
+console.log(f.concat(s));
+
+//let sl = f.slice(1,3);
+//let sl = f.slice(0);
+let sl = f.slice();
+console.log(sl);
+
+//Spread Operator
+let ff = [1,2,3];
+let ss = [4,5,6];
+let combo = [...ff, 'a',...ss,2,true];
+console.log(combo);
+
+//copy with spread operator
+let xx = [...combo];
+console.log(xx);
+
+
+
+let arr = [10,20,30,40,50];
+// for(let val of arr)
+// {
+//     console.log(val);
+// }
+
+// arr.forEach(function(huhu)   //for-each loop
+// {
+//     console.log(huhu);
+// });
+
+arr.forEach(huhu => console.log(huhu)); //arrow-fxn of for-each
+
+//joining arrays
+let nm = [1,2,3,4,5,6];
+let j = nm.join('');
+console.log(j);
+
+//splitting arrays
+let msgg = 'this is msg';
+let parts = msgg.split(' ');
+console.log(parts);
+
+
+//sorting
+let issort = [2,1,7,1,0];
+issort.sort();
+console.log(issort);
+issort.reverse();
+console.log(issort);
+
+
+//filtering arrays
+let ar = [1,2,-3,-1];
+// let checkk = ar.filter(function(v){
+//     return v>=0;
+// })
+// console.log(checkk);
+
+//arrow function of above code
+let checkk = ar.filter(v=> v>=0);
+console.log(checkk);
+
+
+//Mapping Arrays
+let m = [2,3,4,5];
+// let mtest = m.map(function(l)
+// {
+//     return 'student_no' + l;
+// })
+// console.log(mtest);
+
+//arrow fxn of above map 
+let mtest = m.map(l=> 'student_no' +l);
+console.log(mtest);
+
+//Mapping with objects
+let zone = [1,2,-5,-9];
+let zf = zone.filter(t=> t>=0);
+
+// let zmap = zf.map(function(vall)
+// {
+//     return {valueii: vall};
+// })
+// console.log(zmap);
+
+//arrow fxn of above
+let zmap = zf.map(vall => ({valueii: vall}));
+console.log(zmap);
+
+//CHAINING !!
+//let zmap = zone.filter(t=> t>=0).map(vall => ({valueii: vall}));
+//let zmap = zone
+//               .filter(t=> t>=0)
+//               .map(vall => ({valueii: vall}));    
