@@ -221,3 +221,94 @@ console.log(zmap);
 //let zmap = zone
 //               .filter(t=> t>=0)
 //               .map(vall => ({valueii: vall}));    
+
+
+//#functions
+function fxn() 
+{
+    console.log('kya haal hai ji');
+}
+
+fxn();  //function hoisting i.e, all function declaration moves above automatically by JS engine during execution
+
+//fxn assignment
+let stand = function walk() {
+    console.log('walking');
+}
+
+stand(); //but wont be able to call walk directly now 
+//also
+let hha = stand;
+hha();
+
+//named function assignment and anonymous function assignment
+let stand2 = function() {
+    console.log('walking');
+}
+stand2();
+
+function summ(a,b)
+{
+    console.log(arguments);   //special object : argument
+    return a+b;
+}
+let ansa=summ(1,2,3,4,5,6);
+
+//dynamic function using argument to add all values
+function suum(a,b)
+{
+    let total = 0;
+    for(let value of arguments)
+    total = total + value;
+    return total;
+}
+let suumm = suum(1,2,3,45,5,6);
+console.log(suumm);
+
+//rest operator/parameter
+function oo(num,a,...args) //rest parameter should be last formal parameter
+{
+    console.log(args);
+}
+
+oo(12,3,4,5,7);   // will store in array
+
+//default parameter
+function si(p,r=5,y=100)
+{
+    return p*r*y/100;
+}
+console.log(si(1,100)); //hack - use undefined
+
+
+let prs = {
+    fname : 'ujjawal',
+    lname : 'tyagi' 
+};
+
+//console.log(prs);
+function fulname()
+{
+    return `${prs.fname}  ${prs.lname}`;   //backtick is used so spaces and indentation will be preserved
+}
+
+//console.log(fulname());
+
+//issue - read only function (above one)
+let prsn = {
+    fname : 'ujjawal',
+    lname : 'tyagi',
+    get fulname()
+   {
+    return `${prs.fname}  ${prs.lname}`;   //backtick is used so spaces and indentation will be preserved
+   },
+   set fulname(value){
+       let parts = value.split(' ');
+       this.fname=parts[0];
+       this.lname=parts[1];
+   }
+};
+
+//console.log(prsn.fulname);
+prsn.fulname= 'huhu kumar';
+console.log(prsn.fulname);
