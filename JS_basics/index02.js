@@ -298,17 +298,51 @@ function fulname()
 let prsn = {
     fname : 'ujjawal',
     lname : 'tyagi',
-    get fulname()
+    get fulname()                    //getter - access properties
    {
-    return `${prs.fname}  ${prs.lname}`;   //backtick is used so spaces and indentation will be preserved
+    return `${prsn.fname}  ${prsn.lname}`;   //backtick is used so spaces and indentation will be preserved
    },
-   set fulname(value){
+   set fulname(value){               //setter - change or mutate properties
        let parts = value.split(' ');
        this.fname=parts[0];
        this.lname=parts[1];
    }
 };
 
+console.log(`${prsn.fname} ${prsn.lname}`);
 //console.log(prsn.fulname);
-prsn.fulname= 'huhu kumar';
+prsn.fulname = 'huhu kumar';
 console.log(prsn.fulname);
+
+
+// #try and catch
+let prsn22 = {
+    fname : 'ujjawal',
+    lname : 'tyagi',
+    get fulname()                    //getter - access properties
+   {
+    return `${prsn22.fname}  ${prsn22.lname}`;   //backtick is used so spaces and indentation will be preserved
+   },
+   set fulname(value){               //setter - change or mutate properties
+       if(typeof value !== String)
+       {
+        throw new Error("You are stupid and haven't sent a string");
+       }
+       let parts = value.split(' ');
+       this.fname=parts[0];
+       this.lname=parts[1];
+   }
+};
+
+try{
+    prsn22.fulname = true;
+}
+catch (f){
+    alert(f);
+}
+//homework - finally after try and catch
+
+//reducing an array
+let arrr = [1,2,3,4,5];
+let ttsum = arrr.reduce((accumulator, currentValue) => accumulator+currentValue,0);
+console.log(ttsum);  //in absece of 0 acc starts from first value and cvalue from 2nd value
