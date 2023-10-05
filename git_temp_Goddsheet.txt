@@ -28,3 +28,11 @@ git checkout branch_name
 git add .
 git commit -m "commit msg"
 git push origin branch_name
+
+////////////////
+
+Local fork is ahead (already pushed from local but dont want to start
+PUll req.) or some unwanted empty PR :
+git reset --hard <main repo last commit hash>
+git push -f origin main
+-----All is well----
