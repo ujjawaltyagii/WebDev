@@ -35,4 +35,21 @@ Local fork is ahead (already pushed from local but dont want to start
 PUll req.) or some unwanted empty PR :
 git reset --hard <main repo last commit hash>
 git push -f origin main
+
+///////////////
+If some changes are added & committed already from local to remote but can't
+push becaues remote is ahead and can't pull directly because of some un-committed
+changes locally, do:
+git stash (stash your uncommitted changes )
+git pull origin main
+git stash apply ( apply your stashed changes back to your working directory)
+
+(if merge conflict then resolve
+ and do 
+ git add file/folder name
+ git commit -m "msg"
+)
+
+git push origin main
+
 -----All is well----
